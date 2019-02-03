@@ -64,15 +64,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // |------+------+------+------+------+------||      ||      ||------+------+------+------+------+------|
   // |Shift |   Z  |   X  |   C  |   V  |   B  || Macro||   '  ||   N  |   M  |   ,  |   .  |   /  |Shift |
   // |------+------+------+------+------+------||      ||      ||------+------+------+------+------+------|
-  // | Ctrl | Win  | Alt  | LT(4)| MO(2)| Space|`------'`------'|  Del | MO(7)| To(2)| Alt  | Win  | Ctrl |
+  // | Ctrl | Win  | Alt  | LT(4)| MO(2)| Space|`------'`------'|  Del |   =  |   -  | Alt  | MO(4)| Ctrl |
   // `-----------------------------------------'                `-----------------------------------------'
 
 	[_QWERTY] = KEYMAP(
 		KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_N, KC_DEL,
-		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_M, MO(7),
-		LT(4, KC_CAPS), KC_A, KC_S, KC_D, KC_F, KC_G, KC_COMM, TO(2),
+		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_M, KC_EQL,
+		LT(4, KC_CAPS), KC_A, KC_S, KC_D, KC_F, KC_G, KC_COMM, KC_MINS,
 		KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, MO(1), KC_RALT,
-		KC_LCTL, KC_LGUI, KC_LALT, MO(4), MO(2), KC_SPC, KC_QUOT, LT(4, KC_RGUI),
+		KC_LCTL, KC_LGUI, KC_LALT, MO(4), MO(2), KC_SPC, KC_QUOT, MO(4),
 		KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_DOT, KC_RCTL,
 		KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, MT(MOD_LSFT, KC_SLSH),
 		KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_ENT, KC_RSFT),
@@ -169,7 +169,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // |------+------+------+------+------+------||      ||      ||------+------+------+------+------+------|
   // | Shift| BRID | POWER| MUTE | PREV | HOME ||Space ||Reset ||   %  |   =  |  [   |   ]  |   /  | TO(0)|
   // |------+------+------+------+------+------||      ||      ||------+------+------+------+------+------|
-  // | Ctrl | Win  | Alt  |      | NEXT |  END |`------'`------'|  DEL |   +  |   -  |   *  |      | Ctrl |
+  // | Ctrl | Win  | Alt  |      | NEXT |  END |`------'`------'|  DEL | MO(7)| TO(2)|   *  |      | Ctrl |
   // `-----------------------------------------'                `-----------------------------------------'
   // ACDEL = ALT + CTRL + DEL
   // BRIU: Brightness Up - Tăng độ sáng màn hình
@@ -177,8 +177,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FUNC] = KEYMAP(
 		KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_PERC, KC_DEL,
-		KC_TAB, KC_BRIU, KC_WAKE, KC_VOLU, KC_MPLY, KC_PGUP, KC_EQL, KC_PLUS,
-		______, LCTL(LALT(KC_DEL)), KC_SLEP, KC_VOLD, KC_MSTP, KC_PGDN, KC_LBRC, KC_MINS,
+		KC_TAB, KC_BRIU, KC_WAKE, KC_VOLU, KC_MPLY, KC_PGUP, KC_EQL, MO(7),
+		______, LCTL(LALT(KC_DEL)), KC_SLEP, KC_VOLD, KC_MSTP, KC_PGDN, KC_LBRC, TO(2),
 		KC_LSFT, KC_BRID, KC_PWR, KC_MUTE, KC_MPRV, KC_HOME, KC_SPC, KC_ASTR,
 		KC_LCTL, KC_LGUI, KC_LALT, ______, KC_MNXT, KC_END, RESET, ______,
 		KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_RBRC, KC_BSLS,
