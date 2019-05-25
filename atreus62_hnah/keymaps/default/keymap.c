@@ -163,7 +163,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ,-----------------------------------------.                ,-----------------------------------------.
   // |   `  |  F1  |  F2  |  F3  |  F4  |  F5  |                |  F6  |  F7  |  F8  |  F9  |  F10 | F11  |
   // |------+------+------+------+------+------|                |------+------+------+------+------+------|
-  // | Tab  | BRIU | WAKE | VOLU | PLAY | PGUP |                |   <  |   7  |  UP  |   {  |   }  | F12  |
+  // | Tab  | BRIU | WAKE | VOLU | PLAY | PGUP |                |   <  | ACDEL|  UP  |   {  |   }  | F12  |
   // |------+------+------+------+------+------|                |------+------+------+------+------+------|
   // |      | ACDEL| SLEEP| VOLD | STOP | PGDN |,------.,------.|   >  | LEFT | DOWN | RIGHT| PSCR | Enter|
   // |------+------+------+------+------+------||      ||      ||------+------+------+------+------+------|
@@ -182,7 +182,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_LSFT, KC_BRID, KC_PWR, KC_MUTE, KC_MPRV, KC_HOME, KC_SPC, KC_ASTR,
 		KC_LCTL, KC_LGUI, KC_LALT, ______, KC_MNXT, KC_END, RESET, ______,
 		KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_RBRC, KC_BSLS,
-		KC_LABK, KC_AT, KC_UP, KC_LCBR, KC_RCBR, KC_F12, KC_SLSH,
+		KC_LABK, LCTL(LALT(KC_DEL)), KC_UP, KC_LCBR, KC_RCBR, KC_F12, KC_SLSH,
 		KC_RABK, KC_LEFT, KC_DOWN, KC_RGHT, KC_PSCR, KC_ENT, TO(0)),
 
 
